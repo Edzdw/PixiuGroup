@@ -743,7 +743,7 @@ header .mobile-menu {
 .about .infos {
   display: flex;
   margin: 45px 0 0 30px;
-  white-space: nowrap;
+  white-space: pre-wrap;
   width: 975px;
 }
 
