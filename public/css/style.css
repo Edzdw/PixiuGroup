@@ -754,7 +754,7 @@ header .mobile-menu {
 
 .about .infos ul li>span,
 .about .infos ul li>span>span {
-  overflow: hidden;
+  /* overflow: hidden; */
   display: block;
   white-space: nowrap;
   position: relative;
@@ -2372,6 +2372,7 @@ button#hide {
     margin: 0 auto;
     justify-content: center;
     max-width: 360px;
+    text-align: justify;
   }
 
   .about .skills .skills-content {
