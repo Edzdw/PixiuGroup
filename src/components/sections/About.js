@@ -1,111 +1,115 @@
+import { salimovSlider } from "@/src/sliderProps";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 const About = () => {
   return (
     <section className="about main-section flex-column-mobile" id="about">
       {/* INFO HOLDER STARTS */}
-      <div className="info flex-column-mobile">
-        {/* IMAGE STARTS */}
-        <div
-          className="img-container animated-layer image-animation my-photo-container fadeInUp wow"
-          data-wow-offset={200}
-          id="my-photo"
-        >
-          <div>
+      <Swiper
+        {...salimovSlider.portfolio}
+        className="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
+        data-wow-offset={200}
+      >
+        <SwiperSlide className="info flex-column-mobile">
+          {/* IMAGE STARTS */}
+          <div
+            className="img-container animated-layer image-animation my-photo-container fadeInUp wow"
+            data-wow-offset={200}
+            id="my-photo"
+          >
             <div>
-              <img className="my-photo" src="assets/about.jpg" alt="" />
+              <div>
+                <img className="my-photo" src="assets/about.jpg" alt="" />
+              </div>
             </div>
           </div>
-        </div>
-        {/* IMAGE ENDS */}
-        {/* INFO STARTS */}
-        <div>
-          <h2>
-            <span>
-              <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                Alex
+          {/* IMAGE ENDS */}
+          {/* INFO STARTS */}
+          <div>
+            <h2>
+              <span>
+                <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                  Mr Tony
+                </span>
               </span>
-            </span>
-            <span>
-              <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                Trần Tường Thụy
+              <span>
+                <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                </span>
               </span>
-            </span>
-          </h2>
-          <div className="infos">
-            <ul>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Kinh nghiệm :</span>
-                    <span>20 năm trong lĩnh vực đào tạo  </span>
-                    <p>& kèm cặp tài chính & bảo hiểm cá nhân</p>
+            </h2>
+            <div className="infos">
+              <ul>
+                <li>
+                  <span>
+                    <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                      <span>Giới thiệu :</span>
+                      <span>Có nhiều năm kinh nghiệm trong thị trường Forex, Crypto. Cũng đã từng cháy tài khoản nhiều lần, phát triển BOT AI thời gian đầu gặp rất nhiều khó khăn và không thành công. Đến thời điểm này đã có những thành tựu nhất định, giúp được những người đồng hành có lợi nhuận ổn định và an toàn vốn.  </span>
+                    </span>
                   </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Quốc tịch :</span>
-                    <span>VietNam</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Chức vụ:</span>
-                    <span>Freelancer</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Ngôn ngữ :</span>
-                    <span>Tiếng anh, Tiếng Việt</span>
-                  </span>
-                </span>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Địa chỉ :</span>
-                    <span>Can Tho, HCMC</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Số Điện Thoại :</span>
-                    <span>+84939635089</span>
-                  </span>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Email :</span>
-                    <span> finance101@alexgroup.vn </span>
-                  </span>
-                </span>
-              </li>
-              {/* <li>
-                <span>
-                  <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                    <span>Accomplishments :</span>
-                    <span>Building new Market & new GA in Mekong Delta</span>
-                    <p>Building 10 Zone Head currently.</p>
-                    <span>Building 833 agency & 99 Agency leaders at the end of 31 July 2022.</span>
-                  </span>
-                </span>
-              </li> */}
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
+          {/* INFO ENDS */}
+          
+        </SwiperSlide>
+
+        <SwiperSlide className="info flex-column-mobile">
+          {/* IMAGE STARTS */}
+          <div
+            className="img-container animated-layer image-animation my-photo-container fadeInUp wow"
+            data-wow-offset={200}
+            id="my-photo"
+          >
+            <div>
+              <div>
+                <img className="my-photo" src="assets/about.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          {/* IMAGE ENDS */}
+          {/* INFO STARTS */}
+          <div>
+            <h2>
+              <span>
+                <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                  Mr Tony
+                </span>
+              </span>
+              <span>
+                <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                </span>
+              </span>
+            </h2>
+            <div className="infos">
+              <ul>
+                <li>
+                  <span>
+                    <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                      <span>Giới thiệu :</span>
+                      <span>Có nhiều năm kinh nghiệm trong thị trường Forex, Crypto. Cũng đã từng cháy tài khoản nhiều lần, phát triển BOT AI thời gian đầu gặp rất nhiều khó khăn và không thành công. Đến thời điểm này đã có những thành tựu nhất định, giúp được những người đồng hành có lợi nhuận ổn định và an toàn vốn.  </span>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* INFO ENDS */}
+          
+        </SwiperSlide>
+
+        <div className="nav-item next-item animated-btn">
+          <span />
         </div>
-        {/* INFO ENDS */}
-      </div>
+        <div className="nav-item prev-item animated-btn">
+          <span />
+        </div>
+        
+      </Swiper>
+
+      
+
+      
       {/* INFO HOLDER ENDS */}
       {/* SKILLS STARTS */}
       <div className="skills flex-column-mobile">
