@@ -2198,7 +2198,6 @@ button#hide {
   .my-photo-container {
     width: 380px;
     height: 500px;
-    margin: 0 auto;
     padding-top: 30px;
   }
 
@@ -2372,7 +2371,7 @@ button#hide {
   .about .infos {
     margin: 0 auto;
     justify-content: center;
-    max-width: 538px;
+    max-width: 360px;
   }
 
   .about .skills .skills-content {
