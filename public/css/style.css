@@ -756,7 +756,7 @@ header .mobile-menu {
 .about .infos ul li>span>span {
   /* overflow: hidden; */
   display: block;
-  white-space: nowrap;
+  white-space: pre-wrap;
   position: relative;
 }
 
