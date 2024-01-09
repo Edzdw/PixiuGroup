@@ -58,7 +58,7 @@ const About = () => {
           </div>
           {/* INFO ENDS */}
         </SwiperSlide>
-        <SwiperSlide className="info flex-column-mobile">
+        <SwiperSlide id="display-none" className="info flex-column-mobile ">
           {/* IMAGE STARTS */}
           <div
             className="img-container animated-layer image-animation my-photo-container fadeInUp wow"
@@ -122,7 +122,6 @@ const About = () => {
         <div className="nav-item prev-item animated-btn">
           <span />
         </div>
-        np
       </Swiper>
 
       {/* INFO HOLDER ENDS */}

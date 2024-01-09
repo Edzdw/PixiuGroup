@@ -6,7 +6,7 @@ const Testimonials = () => {
         <div className="quote-container animated-layer fade-in-right-animation fadeInUp wow">
           <div>
             <p>
-              <h3> PHẦN CHIA LỢI NHUẬN </h3>
+              <span> PHẦN CHIA LỢI NHUẬN </span>
               <span className="quote">
                 75% TRÊN LỢI NHUẬN THU VỀ TỪ HỆ THỐNG KHÁCH HÀNG
               </span>
@@ -26,7 +26,7 @@ const Testimonials = () => {
         <div className="quote-container animated-layer fade-in-right-animation fadeInUp wow">
           <div>
             <p>
-              <h3> PHẦN CHIA IB</h3>
+              <span> PHẦN CHIA IB</span>
               <span className="quote"> 1. 25.000 đầu tiên ko chia IB.</span>
               <span className="quote"> 2. 25-50k chia trên phần vượt 20%.</span>
               <span className="quote">
