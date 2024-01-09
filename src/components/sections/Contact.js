@@ -22,7 +22,7 @@ const Contact = () => {
             <i className="fa fa-phone" />
             <p>
               <span className="small-text">Số điện thoại</span>
-              +84939635089
+              +84 911.838.878
             </p>
           </div>
           {/* CONTACT ITEM ENDS */}
@@ -31,7 +31,7 @@ const Contact = () => {
             <i className="fa fa-location-dot" />
             <p>
               <span className="small-text">Địa chỉ</span>
-              Can Tho, HCMC
+              HCMC
             </p>
           </div>
           {/* CONTACT ITEM ENDS */}
@@ -42,36 +42,17 @@ const Contact = () => {
             <i className="fa fa-envelope" />
             <p>
               <span className="small-text">email</span>
-                finance101@alexgroup.vn 
+              EricVu.pixiugroups@gmail.com
             </p>
           </div>
           {/* CONTACT ITEM ENDS */}
           {/* CONTACT ITEM STARTS */}
           <div className="animated-layer fade-in-up-animation fadeInUp wow">
             <i className="fa fa-share-nodes" />
-            <span className="small-text">Mạng xã hội</span>
-            <ul className="social">
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-github" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-twitter" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-dribbble" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-facebook" />
-                </a>
-              </li>
-            </ul>
+            <p>
+              <span className="small-text">Telegram:</span>
+              @pixiugroups878
+            </p>
           </div>
           {/* CONTACT ITEM ENDS */}
         </div>

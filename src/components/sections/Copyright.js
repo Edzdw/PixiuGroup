@@ -14,7 +14,7 @@ const Copyright = () => {
             target="_blank"
             href="https://themeforest.net/user/Codeefly/portfolio"
           >
-            Infinity Developers 
+            Pixiu Groups
           </a>
         </span>
         <ul>

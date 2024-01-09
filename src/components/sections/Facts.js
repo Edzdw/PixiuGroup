@@ -71,7 +71,7 @@ const Facts = () => {
             <div>
               <h3>100+</h3>
               <p>
-                Khách hàng <span>khu vực miền Tây</span>
+                Khách hàng <span></span>
               </p>
             </div>
           </div>

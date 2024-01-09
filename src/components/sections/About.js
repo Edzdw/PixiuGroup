@@ -33,8 +33,7 @@ const About = () => {
                 </span>
               </span>
               <span>
-                <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                </span>
+                <span className="animated-layer fade-in-up-animation fadeInUp wow"></span>
               </span>
             </h2>
             <div className="infos">
@@ -43,7 +42,14 @@ const About = () => {
                   <span>
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
                       <span>Giới thiệu :</span>
-                      <span>Có nhiều năm kinh nghiệm trong thị trường Forex, Crypto. Cũng đã từng cháy tài khoản nhiều lần, phát triển BOT AI thời gian đầu gặp rất nhiều khó khăn và không thành công. Đến thời điểm này đã có những thành tựu nhất định, giúp được những người đồng hành có lợi nhuận ổn định và an toàn vốn.  </span>
+                      <span>
+                        Có nhiều năm kinh nghiệm trong thị trường Forex, Crypto.
+                        Cũng đã từng cháy tài khoản nhiều lần, phát triển BOT AI
+                        thời gian đầu gặp rất nhiều khó khăn và không thành
+                        công. Đến thời điểm này đã có những thành tựu nhất định,
+                        giúp được những người đồng hành có lợi nhuận ổn định và
+                        an toàn vốn.{" "}
+                      </span>
                     </span>
                   </span>
                 </li>
@@ -51,9 +57,7 @@ const About = () => {
             </div>
           </div>
           {/* INFO ENDS */}
-          
         </SwiperSlide>
-
         <SwiperSlide className="info flex-column-mobile">
           {/* IMAGE STARTS */}
           <div
@@ -63,7 +67,7 @@ const About = () => {
           >
             <div>
               <div>
-                <img className="my-photo" src="assets/about.jpg" alt="" />
+                <img className="my-photo" src="assets/about2.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -73,12 +77,11 @@ const About = () => {
             <h2>
               <span>
                 <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                  Mr Tony
+                  Mr ERIC VŨ
                 </span>
               </span>
               <span>
-                <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                </span>
+                <span className="animated-layer fade-in-up-animation fadeInUp wow"></span>
               </span>
             </h2>
             <div className="infos">
@@ -86,8 +89,25 @@ const About = () => {
                 <li>
                   <span>
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                      <span>Số Điện Thoại :</span>
+                      <span>+84939635089</span>
+                    </span>
+
+                    <span className="animated-layer fade-in-up-animation fadeInUp wow">
+                      <span>Gmail :</span>
+                      <span>EricVu.pixiugroups@gmail.com</span>
+                    </span>
+
+                    <span className="animated-layer fade-in-up-animation fadeInUp wow">
                       <span>Giới thiệu :</span>
-                      <span>Có nhiều năm kinh nghiệm trong thị trường Forex, Crypto. Cũng đã từng cháy tài khoản nhiều lần, phát triển BOT AI thời gian đầu gặp rất nhiều khó khăn và không thành công. Đến thời điểm này đã có những thành tựu nhất định, giúp được những người đồng hành có lợi nhuận ổn định và an toàn vốn.  </span>
+                      <span>
+                        {" "}
+                        Ngoài kia bao nhiêu nhiễu nhương Đừng vội tin những gì
+                        tôi nói Mà hãy nhìn những gì tôi làm Rồi hãy phán xét Ko
+                        phải là chuyên gia tư vấn , Cũng ko phải là ai TÔI CHỈ
+                        CÓ GIẢI PHÁP TẠO RA TIỀN CHO BẠN BỀN VỮNG AN TOÀN VÀ TỰ
+                        CHỦ .
+                      </span>
                     </span>
                   </span>
                 </li>
@@ -95,21 +115,16 @@ const About = () => {
             </div>
           </div>
           {/* INFO ENDS */}
-          
         </SwiperSlide>
-
         <div className="nav-item next-item animated-btn">
           <span />
         </div>
         <div className="nav-item prev-item animated-btn">
           <span />
         </div>
-        
+        np
       </Swiper>
 
-      
-
-      
       {/* INFO HOLDER ENDS */}
       {/* SKILLS STARTS */}
       <div className="skills flex-column-mobile">
@@ -224,7 +239,7 @@ const About = () => {
             <li>
               <div className="animated-layer fade-in-down-animation fadeInUp wow">
                 <div className="experience">
-                  <h4>Infinity 1</h4>
+                  <h4>Pixiu 1</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
                     <span>10 2022</span>
@@ -237,12 +252,12 @@ const About = () => {
               </div>
             </li>
             {/* TIMELINE ITEM ENDS */}
-            
+
             {/* TIMELINE ITEM STARTS */}
             <li>
               <div className="animated-layer fade-in-down-animation fadeInUp wow">
                 <div className="experience">
-                  <h4>Infinity 2</h4>
+                  <h4>Pixiu 2</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
                     <span>12 2022</span>
@@ -260,7 +275,7 @@ const About = () => {
             <li>
               <div className="animated-layer fade-in-down-animation fadeInUp wow">
                 <div className="education">
-                  <h4>Infinity 3</h4>
+                  <h4>Pixiu 3</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
                     <span>3 2023</span>
@@ -273,12 +288,12 @@ const About = () => {
               </div>
             </li>
             {/* TIMELINE ITEM ENDS */}
-            
+
             {/* TIMELINE ITEM STARTS */}
             <li>
               <div className="animated-layer fade-in-up-animation fadeInUp wow">
                 <div className="experience">
-                  <h4>Infinity 4</h4>
+                  <h4>Pixiu 4</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
                     <span>4 2023</span>
@@ -296,7 +311,7 @@ const About = () => {
             <li>
               <div className="animated-layer fade-in-up-animation fadeInUp wow">
                 <div className="education">
-                  <h4>Infinity EA</h4>
+                  <h4>Pixiu EA</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
                     <span>2023+</span>
@@ -309,7 +324,7 @@ const About = () => {
               </div>
             </li>
             {/* TIMELINE ITEM ENDS */}
-            
+
             <li />
           </ol>
         </div>

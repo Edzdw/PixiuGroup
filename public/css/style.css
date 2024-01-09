@@ -714,6 +714,7 @@ header .mobile-menu {
 .about .info {
   display: flex;
   padding-left: 150px;
+  align-items: center;
 }
 
 .about img.my-photo {
