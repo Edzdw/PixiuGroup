@@ -2171,9 +2171,9 @@ button#hide {
     transform: translateY(100%);
   }
 
-  /* #display-none {
+  #display-none {
     display: none;
-  } */
+  }
 
   .separator-mobile-up {
     transform: translateY(-100%);
