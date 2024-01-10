@@ -1,8 +1,6 @@
 import { salimovSlider } from "@/src/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
 
 const About = () => {
   return (
@@ -13,7 +11,7 @@ const About = () => {
         className="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
         data-wow-offset={200}
       >
-        <SwiperSlide style={{marginRight:"240px"}} className="info flex-column-mobile">
+        <SwiperSlide className="info flex-column-mobile">
           {/* IMAGE STARTS */}
           <div
             className="img-container animated-layer image-animation my-photo-container fadeInUp wow"
