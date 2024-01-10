@@ -95,6 +95,10 @@ section {
   position: relative;
   overflow: hidden;
 }
+.mb-2 {
+  margin-bottom: 1px;
+}
+
 
   /* .img-container:after {
     content: " ";
@@ -2108,11 +2112,6 @@ button#hide {
   border: none;
 }
 
-.mb-2 {
-  margin-bottom: 2px;
-}
-
-
 
 
 
@@ -2172,9 +2171,9 @@ button#hide {
     transform: translateY(100%);
   }
 
-  #display-none {
+  /* #display-none {
     display: none;
-  }
+  } */
 
   .separator-mobile-up {
     transform: translateY(-100%);
@@ -2735,6 +2734,10 @@ button#hide {
 @media screen and (max-width: 767px) {
   body {
     font-size: 16px;
+  }
+
+  #mobile-info {
+    margin-right: 200px;
   }
 
   .separator {
