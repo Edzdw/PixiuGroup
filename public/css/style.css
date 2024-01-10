@@ -2170,10 +2170,10 @@ button#hide {
   .separator-mobile-down {
     transform: translateY(100%);
   }
-
+/* 
   #display-none {
     display: none;
-  }
+  } */
 
   .separator-mobile-up {
     transform: translateY(-100%);
@@ -2197,7 +2197,7 @@ button#hide {
   }
 
   .my-photo-container {
-    width: 380px;
+    width: 220px;
     height: 500px;
     padding-top: 30px;
   }
@@ -2367,6 +2367,11 @@ button#hide {
     font-size: 55px;
     line-height: 65px;
     margin: 35px 0;
+
+  }
+
+  #margin-right {
+    margin-right: 80px;
   }
 
   .about .infos {
@@ -2374,6 +2379,7 @@ button#hide {
     justify-content: center;
     max-width: 360px;
     text-align: justify;
+
   }
 
   .about .skills .skills-content {

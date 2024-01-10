@@ -6,41 +6,27 @@ const Testimonials = () => {
         <div className="quote-container animated-layer fade-in-right-animation fadeInUp wow">
           <div>
             <p>
-              <span> PHẦN CHIA LỢI NHUẬN </span>
               <span className="quote">
-                75% TRÊN LỢI NHUẬN THU VỀ TỪ HỆ THỐNG KHÁCH HÀNG
+                " I have been consistently investing each month since February 2023 with the goal of building wealth. My current account has grown by an impressive 2000% compared to the initial deposit. "
               </span>
-              <span className="quote">
-                Ví Dụ : Khách hàng lợi nhuận tháng đó được 1000$, mình thu của
-                khách 25% là 250$
-              </span>
-              <span className="person">Chính sách</span>
-              <span className="job">Pixiu Groups</span>
+              <span className="person">Viet Phan</span>
+              <span className="job">User - Exness</span>
             </p>
-            <img src="assets/testimonials/testimonial-2.jpg" alt="" />
+            <img src="assets/testimonials/testimonial-1.jpg" alt="" />
           </div>
         </div>
         {/* TESTIMONIAL ITEM ENDS */}
-
         {/* TESTIMONIAL ITEM STARTS */}
         <div className="quote-container animated-layer fade-in-right-animation fadeInUp wow">
           <div>
             <p>
-              <span> PHẦN CHIA IB</span>
-              <span className="quote"> 1. 25.000 đầu tiên ko chia IB.</span>
-              <span className="quote"> 2. 25-50k chia trên phần vượt 20%.</span>
               <span className="quote">
-                {" "}
-                3. 50-100k chia 40% trên phần vượt của 50.
+                " I have been investing with Infinity since the very beginning, and we have had more than 10 continuous updates and positive achievements. I hope for even more success in the future "
               </span>
-              <span className="quote">
-                {" "}
-                4. Trên 100k chia 60% trên phần vượt
-              </span>
-              <span className="person">Chính sách</span>
-              <span className="job">Pixiu Groups</span>
+              <span className="person">Fury</span>
+              <span className="job">Client - Infinity EA user</span>
             </p>
-            <img src="assets/testimonials/testimonial-1.jpg" alt="" />
+            <img src="assets/testimonials/testimonial-2.jpg" alt="" />
           </div>
         </div>
         {/* TESTIMONIAL ITEM ENDS */}
