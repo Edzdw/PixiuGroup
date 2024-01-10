@@ -41,7 +41,6 @@ const About = () => {
                 <li>
                   <span>
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                      <span>Giới thiệu :</span>
                       <span>
                         Có nhiều năm kinh nghiệm trong thị trường Forex, Crypto.
                         Cũng đã từng cháy tài khoản nhiều lần, phát triển BOT AI
@@ -99,15 +98,15 @@ const About = () => {
                     </span>
 
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                      <span>Giới thiệu :</span>
-                      <span>
-                        {" "}
-                        Ngoài kia bao nhiêu nhiễu nhương Đừng vội tin những gì
-                        tôi nói Mà hãy nhìn những gì tôi làm Rồi hãy phán xét Ko
-                        phải là chuyên gia tư vấn , Cũng ko phải là ai TÔI CHỈ
-                        CÓ GIẢI PHÁP TẠO RA TIỀN CHO BẠN BỀN VỮNG AN TOÀN VÀ TỰ
-                        CHỦ .
-                      </span>
+                      <p className="mb-2">Ngoài kia bao nhiêu nhiễu nhương</p>
+                      <p className="mb-2">Đừng vội tin những gì tôi nói</p>
+                      <p className="mb-2">Mà hãy nhìn những gì tôi làm</p>
+                      <p className="mb-2">Rồi hãy phán xét</p>
+                      <p className="mb-2">
+                        Ko phải là chuyên gia tư vấn , Cũng ko phải là ai TÔI
+                        CHỈ CÓ GIẢI PHÁP TẠO RA TIỀN CHO BẠN BỀN VỮNG AN TOÀN VÀ
+                        TỰ CHỦ .
+                      </p>
                     </span>
                   </span>
                 </li>
