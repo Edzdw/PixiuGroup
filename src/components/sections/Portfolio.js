@@ -22,6 +22,7 @@ const Portfolio = () => {
       {/* TITLE ENDS */}
       <Swiper
         {...salimovSlider.portfolio}
+        id="padding-0"
         className="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
         data-wow-offset={200}
       >

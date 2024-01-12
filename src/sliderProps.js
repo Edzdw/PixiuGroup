@@ -33,8 +33,8 @@ export const salimovSlider = {
         navigation: false,
       },
       768: {
-        slidesPerView: "auto",
-        spaceBetween: 0,
+        slidesPerView: 1,
+        spaceBetween: 200,
       },
       1025: {
         direction: "vertical",
@@ -56,8 +56,8 @@ export const salimovSlider = {
         navigation: false,
       },
       768: {
-        slidesPerView: "auto",
-        spaceBetween: 0,
+        slidesPerView: 1.,
+        spaceBetween: 30,
       },
       1025: {
         direction: "vertical",

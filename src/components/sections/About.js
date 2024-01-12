@@ -94,7 +94,7 @@ const About = () => {
                   <span>
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
                       <span>Số Điện Thoại :</span>
-                      <span>+84939635089</span>
+                      <span>0903770039</span>
                     </span>
 
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
@@ -115,13 +115,11 @@ const About = () => {
                         </p>
                         <p className="mb-2 white-text">Rồi hãy phán xét</p>
                         <p className="mb-2 white-text">
-                          {" "}
                           Ko phải là chuyên gia tư vấn , Cũng ko phải là ai
                         </p>
-                        <p className="mb-2 white-text">
-                          {" "}
+                        <p style={{fontSize:"24px"}} className="mb-2 white-text">
                           TÔI CHỈ CÓ GIẢI PHÁP TẠO RA TIỀN CHO BẠN BỀN VỮNG AN
-                          TOÀN VÀ TỰ CHỦ{" "}
+                          TOÀN VÀ TỰ CHỦ
                         </p>
                       </span>
                     </span>
