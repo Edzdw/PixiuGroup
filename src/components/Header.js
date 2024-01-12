@@ -37,16 +37,16 @@ const Header = () => {
       return;
     }
     let data = JSON.stringify({
-      "email": email
+      email: email,
     });
 
     let config = {
-      method: 'post',
-      url: 'https://jellyfish-app-kafzn.ondigitalocean.app/api/v1/auth/get-info',
+      method: "post",
+      url: "https://jellyfish-app-kafzn.ondigitalocean.app/api/v1/auth/get-info",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      data: data
+      data: data,
     };
 
     Axios.request(config)
@@ -55,7 +55,8 @@ const Header = () => {
           toggleLinkRefModal();
         }
         setRefferalCode(response.data.refCode);
-      }).catch(error => {
+      })
+      .catch((error) => {
         if (error.response.status === 404) {
           normalAlert("Email: " + email + " không tồn tại!", "error");
         } else {
@@ -72,14 +73,13 @@ const Header = () => {
     setTimeout(() => {
       window.location.reload();
     }, 1500);
-  }
+  };
 
   const handleCopy = () => {
     if (refferalCode) {
-      navigator.clipboard.writeText(refferalCode)
-        .then(function () {
-          normalAlert("Mã giới thiệu đã được copy!", "success");
-        });
+      navigator.clipboard.writeText(refferalCode).then(function () {
+        normalAlert("Mã giới thiệu đã được copy!", "success");
+      });
     } else {
       return;
     }
@@ -110,24 +110,21 @@ const Header = () => {
               <li>
                 <span id="blog-link">Blog</span>
               </li>
-              <li>
-                {email ? <span id="network-link">Network</span> : ""}
-              </li>
-              <li>
-                {email ? <span id="exness-link" onClick={toggleAddExnessModal}>Add Exness</span> : ""}
-              </li>
             </ul>
           </nav>
         </div>
         {/* MENU ENDS */}
         {/* FREELANCE STARTS */}
         <div className="mail">
-          {email ? <p>
-            Ref Code :<span onClick={handleCopy}> {refferalCode} </span>
-          </p> : ""}
-          {email ? <span id="log-out" onClick={handleLogout}>
-            Logout
-          </span> : <span id="sign-in" onClick={toggleSignInModal}>Sign In</span>}
+          <li>
+            <a
+              id="sign-in"
+              href="#"
+              target="_blank"
+            >
+              Sign In
+            </a>
+          </li>
         </div>
         {/* FREELANCE ENDS */}
       </div>
@@ -166,35 +163,62 @@ const Header = () => {
               </a>
             </li>
             <li>
-              {email ? <a href="#network">
-                <span>Network</span>
-              </a> : <a href="#network">
-                <span id="sign-in" onClick={toggleSignInModal}>Sign In</span>
-              </a>}
+              <a
+                id="sign-in"
+                href="#"
+                target="_blank"
+              >
+                Sign In
+              </a>
             </li>
             <li>
-              {email ? <a href="#exness">
-                <span onClick={toggleAddExnessModal}>Exness</span>
-              </a> : ""}
+              {email ? (
+                <a href="#exness">
+                  <span onClick={toggleAddExnessModal}>Exness</span>
+                </a>
+              ) : (
+                ""
+              )}
             </li>
             <li>
-              {email ? <p>
-                Ref Code :<span onClick={handleCopy}> {refferalCode} </span>
-              </p> : ""}
-
+              {email ? (
+                <p>
+                  Ref Code :<span onClick={handleCopy}> {refferalCode} </span>
+                </p>
+              ) : (
+                ""
+              )}
             </li>
             <li>
-              {email ? <a href="#"><span onClick={handleLogout}>Logout</span></a> : ""}
+              {email ? (
+                <a href="#">
+                  <span onClick={handleLogout}>Logout</span>
+                </a>
+              ) : (
+                ""
+              )}
             </li>
           </ul>
         </div>
       </nav>
       {/* Mobile Menu Ends */}
-      {isSignInModalOpen && <Signin isOpen={isSignInModalOpen} toggle={toggleSignInModal} />}
+      {isSignInModalOpen && (
+        <Signin isOpen={isSignInModalOpen} toggle={toggleSignInModal} />
+      )}
 
-      <LinkRef isOpen={isLinkRefModalOpen} toggle={toggleLinkRefModal} current={email} />
+      <LinkRef
+        isOpen={isLinkRefModalOpen}
+        toggle={toggleLinkRefModal}
+        current={email}
+      />
 
-      {isAddExnessModalOpen && <Exness isOpen={isAddExnessModalOpen} toggle={toggleAddExnessModal} success={toggleAddExnessModal} />}
+      {isAddExnessModalOpen && (
+        <Exness
+          isOpen={isAddExnessModalOpen}
+          toggle={toggleAddExnessModal}
+          success={toggleAddExnessModal}
+        />
+      )}
     </header>
   );
 };

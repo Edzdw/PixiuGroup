@@ -72,6 +72,8 @@ body {
 }
 
 
+
+
 #wrapper {
   width: 100%;
   overflow-x: auto;
@@ -95,10 +97,14 @@ section {
   position: relative;
   overflow: hidden;
 }
-.mb-2 {
+.mbt-2 {
   margin-bottom: 1px;
 }
 
+
+.white-text {
+  color: white !important;
+}
 
   /* .img-container:after {
     content: " ";
@@ -572,24 +578,36 @@ header .mobile-menu {
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style: none;
 }
 
 #sign-in {
-  margin-left: 12px;
   font-size: 1.1rem;
   position: relative;
   cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-weight: 500;
+  border: 2.5px solid #ffb400;
+  border-radius: 20px;
+  padding: 15px 30px;
 }
+
+#sign-in:hover {
+  border-color: white;
+}
+
 
 #sign-in::before {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 70%;
   height: 2px;
   border-radius: 4px;
-  background-color: var(--text-color);
-  bottom: 0;
-  left: 0;
+  background-color: white;
+  bottom: 10px;
+  left: 17%;
   transform-origin: right;
   transform: scaleX(0);
   transition: transform .3s ease-in-out;
@@ -746,7 +764,7 @@ header .mobile-menu {
 
 .about .infos {
   display: flex;
-  margin: 45px 0 0 30px;
+  margin: 30px 0 0 30px;
   white-space: pre-wrap;
   width: 975px;
 }
@@ -2197,7 +2215,7 @@ button#hide {
   }
 
   .my-photo-container {
-    width: 220px;
+    width: 250px;
     height: 500px;
     padding-top: 30px;
   }
@@ -2315,6 +2333,8 @@ button#hide {
     text-decoration: none;
     padding: 14px 0;
     position: relative;
+    border: none;
+    font-weight: 400;
   }
 
   #home .animated-layer {
@@ -2353,9 +2373,10 @@ button#hide {
     display: none;
   }
 
-  .about {
+
+  /* .about {
     padding: 0 30px 16px;
-  }
+  } */
 
   .about .info {
     padding: 0;
@@ -2672,7 +2693,19 @@ button#hide {
   }
 
   .flex-column-mobile {
-    flex-direction: column;
+    flex-direction: column  ;
+  }
+
+  #padding-0 {
+    padding-left: 0;
+  }
+
+  .about .infos ul li>span>span {
+    padding-left: 0 ;
+  }
+
+  .about .infos ul li>span>span:before {
+    content: "";
   }
 
 

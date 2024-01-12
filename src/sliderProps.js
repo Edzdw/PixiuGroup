@@ -20,6 +20,29 @@ SwiperCore.use([
 ]);
 
 export const salimovSlider = {
+  about: {
+    loop: true,
+    navigation: {
+      nextEl: ".next-item",
+      prevEl: ".prev-item",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        navigation: false,
+      },
+      768: {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+      },
+      1025: {
+        direction: "vertical",
+      },
+    },
+  },
+
+  
   portfolio: {
     loop: true,
     navigation: {

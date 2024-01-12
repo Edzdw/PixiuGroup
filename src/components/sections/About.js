@@ -6,11 +6,16 @@ const About = () => {
     <section className="about main-section flex-column-mobile" id="about">
       {/* INFO HOLDER STARTS */}
       <Swiper
-        {...salimovSlider.portfolio}
+        {...salimovSlider.about}
+        id="padding-0"
         className="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow"
         data-wow-offset={200}
       >
-        <SwiperSlide style={{marginRight:"120px"}} id="margin-right" className="info flex-column-mobile">
+        <SwiperSlide
+          style={{ marginRight: "120px" }}
+          id="margin-right"
+          className="info flex-column-mobile"
+        >
           {/* IMAGE STARTS */}
           <div
             className="img-container animated-layer image-animation my-photo-container fadeInUp wow"
@@ -41,7 +46,7 @@ const About = () => {
                 <li>
                   <span>
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                      <span>
+                      <span className="white-text">
                         Có nhiều năm kinh nghiệm trong thị trường Forex, Crypto.
                         Cũng đã từng cháy tài khoản nhiều lần, phát triển BOT AI
                         thời gian đầu gặp rất nhiều khó khăn và không thành
@@ -98,15 +103,27 @@ const About = () => {
                     </span>
 
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                      <p className="mb-2">Ngoài kia bao nhiêu nhiễu nhương</p>
-                      <p className="mb-2">Đừng vội tin những gì tôi nói</p>
-                      <p className="mb-2">Mà hãy nhìn những gì tôi làm</p>
-                      <p className="mb-2">Rồi hãy phán xét</p>
-                      <p className="mb-2">
-                        Ko phải là chuyên gia tư vấn , Cũng ko phải là ai TÔI
-                        CHỈ CÓ GIẢI PHÁP TẠO RA TIỀN CHO BẠN BỀN VỮNG AN TOÀN VÀ
-                        TỰ CHỦ .
-                      </p>
+                      <span>
+                        <p className="mb-2 white-text">
+                          Ngoài kia bao nhiêu nhiễu nhương
+                        </p>
+                        <p className="mb-2 white-text">
+                          Đừng vội tin những gì tôi nói
+                        </p>
+                        <p className="mb-2 white-text">
+                          Mà hãy nhìn những gì tôi làm
+                        </p>
+                        <p className="mb-2 white-text">Rồi hãy phán xét</p>
+                        <p className="mb-2 white-text">
+                          {" "}
+                          Ko phải là chuyên gia tư vấn , Cũng ko phải là ai
+                        </p>
+                        <p className="mb-2 white-text">
+                          {" "}
+                          TÔI CHỈ CÓ GIẢI PHÁP TẠO RA TIỀN CHO BẠN BỀN VỮNG AN
+                          TOÀN VÀ TỰ CHỦ{" "}
+                        </p>
+                      </span>
                     </span>
                   </span>
                 </li>
