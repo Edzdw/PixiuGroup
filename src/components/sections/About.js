@@ -1,7 +1,10 @@
 import { salimovSlider } from "@/src/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="about main-section flex-column-mobile" id="about">
       {/* INFO HOLDER STARTS */}
@@ -46,14 +49,7 @@ const About = () => {
                 <li>
                   <span>
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                      <span className="white-text">
-                        Có nhiều năm kinh nghiệm trong thị trường Forex, Crypto.
-                        Cũng đã từng cháy tài khoản nhiều lần, phát triển BOT AI
-                        thời gian đầu gặp rất nhiều khó khăn và không thành
-                        công. Đến thời điểm này đã có những thành tựu nhất định,
-                        giúp được những người đồng hành có lợi nhuận ổn định và
-                        an toàn vốn.{" "}
-                      </span>
+                      <span className="white-text">{t("about1")}</span>
                     </span>
                   </span>
                 </li>
@@ -93,7 +89,7 @@ const About = () => {
                 <li>
                   <span>
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                      <span>Số Điện Thoại :</span>
+                      <span>{t("phoneNumber")} :</span>
                       <span>0903770039</span>
                     </span>
 
@@ -104,22 +100,16 @@ const About = () => {
 
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
                       <span>
-                        <p className="mb-2 white-text">
-                          Ngoài kia bao nhiêu nhiễu nhương
-                        </p>
-                        <p className="mb-2 white-text">
-                          Đừng vội tin những gì tôi nói
-                        </p>
-                        <p className="mb-2 white-text">
-                          Mà hãy nhìn những gì tôi làm
-                        </p>
-                        <p className="mb-2 white-text">Rồi hãy phán xét</p>
-                        <p className="mb-2 white-text">
-                          Ko phải là chuyên gia tư vấn , Cũng ko phải là ai
-                        </p>
-                        <p style={{fontSize:"24px"}} className="mb-2 white-text">
-                          TÔI CHỈ CÓ GIẢI PHÁP TẠO RA TIỀN CHO BẠN BỀN VỮNG AN
-                          TOÀN VÀ TỰ CHỦ
+                        <p className="mb-2 white-text">{t("about2")}</p>
+                        <p className="mb-2 white-text">{t("about3")}</p>
+                        <p className="mb-2 white-text">{t("about4")}</p>
+                        <p className="mb-2 white-text">{t("about5")}</p>
+                        <p className="mb-2 white-text">{t("about6")}</p>
+                        <p
+                          style={{ fontSize: "24px" }}
+                          className="mb-2 white-text"
+                        >
+                          {t("about7")}
                         </p>
                       </span>
                     </span>
@@ -147,7 +137,7 @@ const About = () => {
           <h3>
             <span>
               <span className="animated-layer fade-in-left-animation fadeInUp wow">
-                Tính năng
+                {t('featureTitle')}
               </span>
             </span>
           </h3>
@@ -161,7 +151,7 @@ const About = () => {
               <span>
                 <i className="devicon-wordpress-plain" />
               </span>
-              <h4>Tự động giao dịch</h4>
+              <h4>{t('feature1')}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
@@ -169,7 +159,7 @@ const About = () => {
               <span>
                 <i className="devicon-jquery-plain" />
               </span>
-              <h4>24/5</h4>
+              <h4>{t('feature2')}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -179,7 +169,7 @@ const About = () => {
               <span>
                 <i className="devicon-angularjs-plain" />
               </span>
-              <h4>Phòng chống rủi ro</h4>
+              <h4>{t('feature3')}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
@@ -187,7 +177,7 @@ const About = () => {
               <span>
                 <i className="devicon-drupal-plain" />
               </span>
-              <h4>Mốc bảo vệ</h4>
+              <h4>{t('feature4')}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -197,7 +187,7 @@ const About = () => {
               <span>
                 <i className="devicon-react-plain" />
               </span>
-              <h4>Phân tích real-time</h4>
+              <h4>{t('feature5')}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
@@ -205,7 +195,7 @@ const About = () => {
               <span>
                 <i className="devicon-docker-plain" />
               </span>
-              <h4>Phân tích chiến lược</h4>
+              <h4>{t('feature6')}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -215,7 +205,7 @@ const About = () => {
               <span>
                 <i className="devicon-nodejs-plain" />
               </span>
-              <h4> Vào/thoát lệnh </h4>
+              <h4> {t('feature7')} </h4>
             </div>
             {/* SKILL ITEM ENDS */}
             {/* SKILL ITEM STARTS */}
@@ -223,7 +213,7 @@ const About = () => {
               <span>
                 <i className="devicon-sass-plain" />
               </span>
-              <h4>Đa dạng cặp tiền</h4>
+              <h4>{t('feature8')}</h4>
             </div>
             {/* SKILL ITEM ENDS */}
           </div>
@@ -238,7 +228,7 @@ const About = () => {
           <h3>
             <span>
               <span className="animated-layer fade-in-left-animation">
-                Thành tựu
+                {t('achievementTitle')}
               </span>
             </span>
           </h3>
@@ -255,11 +245,11 @@ const About = () => {
                   <h4>Pixiu 1</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>10 2022</span>
+                    <span>{t('achievementday1')}</span>
                   </p>
                   <p>
                     <i className="fa-regular fa-building" />
-                    <span> Sóng Hồi</span>
+                    <span>{t('achievementname1')}</span>
                   </p>
                 </div>
               </div>
@@ -273,11 +263,11 @@ const About = () => {
                   <h4>Pixiu 2</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>12 2022</span>
+                    <span>{t('achievementday2')}</span>
                   </p>
                   <p>
                     <i className="fa-regular fa-building" />
-                    <span>Giao dịch 2 chiều</span>
+                    <span>{t('achievementname2')}</span>
                   </p>
                 </div>
               </div>
@@ -291,11 +281,11 @@ const About = () => {
                   <h4>Pixiu 3</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>3 2023</span>
+                    <span>{t('achievementday3')}</span>
                   </p>
                   <p>
                     <i className="fa-solid fa-building-columns" />
-                    <span>Tự Xóa Lệnh</span>
+                    <span>{t('achievementname3')}</span>
                   </p>
                 </div>
               </div>
@@ -309,11 +299,11 @@ const About = () => {
                   <h4>Pixiu 4</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>4 2023</span>
+                    <span>{t('achievementday4')}</span>
                   </p>
                   <p>
                     <i className="fa-regular fa-building" />
-                    <span>Giảm vị thế xấu</span>
+                    <span>{t('achievementname4')}</span>
                   </p>
                 </div>
               </div>
@@ -327,11 +317,11 @@ const About = () => {
                   <h4>Pixiu EA</h4>
                   <p>
                     <i className="fa-regular fa-clock" />
-                    <span>2023+</span>
+                    <span>{t('achievementday5')}</span>
                   </p>
                   <p>
                     <i className="fa-solid fa-building-columns" />
-                    <span>Đang phát triển</span>
+                    <span>{t('achievementname5')}</span>
                   </p>
                 </div>
               </div>

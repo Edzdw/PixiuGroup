@@ -1,4 +1,11 @@
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+
 const Home = () => {
+  const { t } = useTranslation()
+  // useEffect(() => {
+  //   i18n.changeLanguage('vi')
+  // },[])
   return (
     <section className="home image" id="home">
       <div>
@@ -6,17 +13,17 @@ const Home = () => {
           <h1>
             <span>
               <span className="animated-layer">
-                Welcome<span>.</span>
+                {t('greeting')}<span>.</span>
               </span>
             </span>
             <span className="position-relative">
-              <span className="animated-layer">To</span>
+              <span className="animated-layer">{t('greeting2')}</span>
               <span className="intro animated-layer">
-                "Beyond a Simple Bot Trade - Your Gateway to Infinite Opportunities!"
+                {t('slogan')}
               </span>
             </span>
             <span>
-              <span className="animated-layer">Pixiu Groups</span>
+              <span className="animated-layer">{t('projectName')}</span>
             </span>
           </h1>
         </div>

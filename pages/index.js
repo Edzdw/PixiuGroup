@@ -13,6 +13,11 @@ import Testimonials from "@/src/components/sections/Testimonials";
 import Separator from "@/src/components/Separator";
 import { jqueryFuntion } from "@/src/utilits";
 import { Fragment, useEffect } from "react";
+
+import { I18nextProvider } from "react-i18next";
+import i18nConfig from "../src/i18n/i18n.config";
+
+
 const Index = () => {
   useEffect(() => {
     jqueryFuntion();
@@ -29,33 +34,36 @@ const Index = () => {
 
   return (
     <Fragment>
-      <div className="page-content">
-        <Header />
-        <div id="wrapper">
-          <main className="flex-column-mobile">
-          <Home />
-            <About />
-            <Separator type={"down"} />
-            <Facts />
-            <Separator type={"up"} />
-            <Portfolio />
-            <Separator type={"down"} />
-            <Testimonials />
-            <Separator type={"up"} />
-            <Contact />
-            <Separator type={"down"} />
-            <Blog />
-            <Separator type={"up"} />
-            {email && <>
-              <Network />
-              <Separator type={"down"} /> 
-            </>}
-            <Copyright />
-
-          </main>
+      <I18nextProvider i18n={i18nConfig}>
+        <div className="page-content">
+          <Header />
+          <div id="wrapper">
+            <main className="flex-column-mobile">
+              <Home />
+              <About />
+              <Separator type={"down"} />
+              <Facts />
+              <Separator type={"up"} />
+              <Portfolio />
+              <Separator type={"down"} />
+              <Testimonials />
+              <Separator type={"up"} />
+              <Contact />
+              <Separator type={"down"} />
+              <Blog />
+              <Separator type={"up"} />
+              {email && (
+                <>
+                  <Network />
+                  <Separator type={"down"} />
+                </>
+              )}
+              <Copyright />
+            </main>
+          </div>
+          <ScrollBar />
         </div>
-        <ScrollBar />
-      </div>
+      </I18nextProvider>
     </Fragment>
   );
 };

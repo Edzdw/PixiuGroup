@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Signin from "./Signin";
 import LinkRef from "./LinkRef";
 import Exness from "./Exness";
 import Axios from "axios";
 import { normalAlert } from "./Swal";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import { useEffect } from "react";
+import i18n from "../i18n/i18n.config";
 
 const Header = () => {
   const [isSignInModalOpen, setIsSignInModalOpen] = React.useState(false);
@@ -12,6 +16,20 @@ const Header = () => {
   const [refferalCode, setRefferalCode] = React.useState(0);
 
   const [email, setEmail] = React.useState("");
+  const { t } = useTranslation();
+  const [languages, setLanguage] = useState([
+    {
+      id: 0,
+      name: "Việt Nam (VI)",
+      code: "vi",
+    },
+
+    {
+      id: 1,
+      name: "English (EN)",
+      code: "en",
+    },
+  ]);
 
   const toggleSignInModal = () => {
     setIsSignInModalOpen(!isSignInModalOpen);
@@ -95,21 +113,30 @@ const Header = () => {
             <ul>
               <li>
                 <span className="active" id="home-link">
-                  Home
+                  {t("home")}
                 </span>
               </li>
               <li>
-                <span id="about-link">About</span>
+                <span id="about-link">{t("about")}</span>
               </li>
               <li>
-                <span id="portfolio-link">Portfolio</span>
+                <span id="portfolio-link">{t("portfolio")}</span>
               </li>
               <li>
-                <span id="contact-link">Contact</span>
+                <span id="contact-link">{t("contact")}</span>
               </li>
               <li>
-                <span id="blog-link">Blog</span>
+                <span id="blog-link">{t("blog")}</span>
               </li>
+              {languages.map((language) => (
+                <li
+                  onClick={() => {
+                    i18n.changeLanguage(language.code);
+                  }}
+                >
+                  <span id="language-link">{language.name}</span>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
@@ -117,12 +144,8 @@ const Header = () => {
         {/* FREELANCE STARTS */}
         <div className="mail">
           <li>
-            <a
-              id="sign-in"
-              href="#"
-              target="_blank"
-            >
-              Sign In
+            <a id="sign-in" href="#" target="_blank">
+              {t("signIn")}
             </a>
           </li>
         </div>
@@ -139,65 +162,43 @@ const Header = () => {
           <ul className="list-unstyled" id="menu">
             <li>
               <a href="#home">
-                <span>Home</span>
+                <span>{t("home")}</span>
               </a>
             </li>
             <li>
               <a href="#my-photo">
-                <span>About</span>
+                <span>{t("about")}</span>
               </a>
             </li>
             <li>
               <a href="#portfolio">
-                <span>Portfolio</span>
+                <span>{t("portfolio")}</span>
               </a>
             </li>
             <li>
               <a href="#contact">
-                <span>Contact</span>
+                <span>{t("contact")}</span>
               </a>
             </li>
             <li>
               <a href="#blog">
-                <span>Blog</span>
+                <span>{t("home")}</span>
               </a>
             </li>
             <li>
-              <a
-                id="sign-in"
-                href="#"
-                target="_blank"
-              >
-                Sign In
+              <a id="sign-in" href="#" target="_blank">
+                {t("signIn")}
               </a>
             </li>
-            <li>
-              {email ? (
-                <a href="#exness">
-                  <span onClick={toggleAddExnessModal}>Exness</span>
-                </a>
-              ) : (
-                ""
-              )}
-            </li>
-            <li>
-              {email ? (
-                <p>
-                  Ref Code :<span onClick={handleCopy}> {refferalCode} </span>
-                </p>
-              ) : (
-                ""
-              )}
-            </li>
-            <li>
-              {email ? (
-                <a href="#">
-                  <span onClick={handleLogout}>Logout</span>
-                </a>
-              ) : (
-                ""
-              )}
-            </li>
+            {languages.map((language) => (
+                <li
+                  onClick={() => {
+                    i18n.changeLanguage(language.code);
+                  }}
+                >
+                  <span id="language-link">{language.name}</span>
+                </li>
+              ))}
           </ul>
         </div>
       </nav>
