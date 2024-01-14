@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const Facts = () => {
+  const { t } = useTranslation();
   return (
     <section className="facts">
       <div className="flex-column-mobile">
@@ -11,7 +14,8 @@ const Facts = () => {
             <div>
               <h3>56+</h3>
               <p>
-                Tháng<span>Kinh nghiệm</span>
+                {t("factDescription1")}
+                <span>{t("factDescription2")}</span>
               </p>
             </div>
           </div>
@@ -26,7 +30,8 @@ const Facts = () => {
             <div>
               <h3>10%</h3>
               <p>
-                Lợi nhuận<span>hàng tháng</span>
+                {t("factDescription3")}
+                <span>{t("factDescription4")}</span>
               </p>
             </div>
           </div>
@@ -41,7 +46,8 @@ const Facts = () => {
             <div>
               <h3>30%</h3>
               <p>
-                Mốc bảo vệ<span>Mức 1</span>
+                {t("factDescription5")}
+                <span>{t("factDescription6")}</span>
               </p>
             </div>
           </div>
@@ -56,7 +62,8 @@ const Facts = () => {
             <div>
               <h3>50%</h3>
               <p>
-                Mốc bảo vệ<span>Mức 2</span>
+                {t("factDescription7")}
+                <span>{t("factDescription8")}</span>
               </p>
             </div>
           </div>
@@ -71,7 +78,7 @@ const Facts = () => {
             <div>
               <h3>100+</h3>
               <p>
-                Khách hàng <span></span>
+                {t('factDescription9')}<span></span>
               </p>
             </div>
           </div>

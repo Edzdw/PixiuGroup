@@ -1,55 +1,71 @@
 import { Fragment, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { I18nextProvider } from "react-i18next";
+import i18nConfig from "../src/i18n/i18n.config";
 
 const BlogPost = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     document.querySelector("body").classList.add("blog-page");
   }, []);
 
   return (
     <Fragment>
-      <a href="/" className="back-btn">
-        <i className="fa-solid fa-arrow-left"></i>
-      </a>
-      <div className="blog-content">
-        <h1>Tạo tài khoản</h1>
-        {/* ARTICLE STARTS */}
-        <div className="main-post">
-          {/* META STARTS */}
-          <div className="meta d-flex align-items-center">
-            <div className="d-flex align-items-center">
-              <i className="fa-regular fa-calendar" />
-              <span>9 Apr 2022</span>
+      <I18nextProvider i18n={i18nConfig}>
+        <a href="/" className="back-btn">
+          <i className="fa-solid fa-arrow-left"></i>
+        </a>
+        <div className="blog-content">
+          <h1>{t("registerGuideTitle")}</h1>
+          {/* ARTICLE STARTS */}
+          <div className="main-post">
+            {/* META STARTS */}
+            <div className="meta d-flex align-items-center">
+              <div className="d-flex align-items-center">
+                <i className="fa-regular fa-calendar" />
+                <span>{t("registerDay")}</span>
+              </div>
+              <div className="d-flex align-items-center">
+                <i className="fa-solid fa-tag" />
+                <span>{t("registertext")}</span>
+              </div>
+              <div className="d-flex align-items-center">
+                <i className="fa-regular fa-comments" />
+                <span>{t("registertext1")}</span>
+              </div>
             </div>
-            <div className="d-flex align-items-center">
-              <i className="fa-solid fa-tag" />
-              <span>Đăng kí</span>
+            {/* META ENDS */}
+            {/* CONTENT STARTS */}
+            <h3>{t("registerSubTitle")}</h3>
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/Z-EISidEspA?si=Msph2eddMqXwroD0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div className="post-content">
+              <p>
+                <span className="post-description">
+                  {t("registerDescription1")}
+                </span>
+                <span className="post-description">
+                  {t("registerDescription2")}
+                </span>
+                <span className="post-description">
+                  {t("registerDescription3")}
+                </span>
+              </p>
+              <p className="ref-text">3hjpuzkltk</p>
+              <p>{t("registerDescription4")}</p>
             </div>
-            <div className="d-flex align-items-center">
-              <i className="fa-regular fa-comments" />
-              <span>hướng dẫn</span>
-            </div>
+            {/* CONTENT ENDS */}
           </div>
-          {/* META ENDS */}
-          {/* CONTENT STARTS */}
-          <h3>Hướng dẫn đăng kí tài khoản Exness</h3>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/Z-EISidEspA?si=Msph2eddMqXwroD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <div className="post-content">
-            <p>
-              Bước 1: Truy cập trang web chính thức của Exness
-              <p>Bước 2: Tại giao diện trang chủ, bấm vào mục Đăng Nhập, sau đó chọn Tạo Tài Khoản.</p>
-              <p>Điền các trường cần thiết, sau đó tại mục Mã giới thiệu nhập mã giới thiệu như sau:</p> 
-            </p> 
-            <p className = "ref-text">
-              3hjpuzkltk
-            </p>
-            <p>
-              Lưu ý: hãy sao chép và dán mã để tránh sai sót. Sau đó bấm tiếp tục, chúc mừng bạn đã tạo thành công tài khoản Exness của bạn
-            </p>
-          </div>
-          {/* CONTENT ENDS */}
+          {/* ARTICLE ENDS */}
         </div>
-        {/* ARTICLE ENDS */}
-      </div>
+      </I18nextProvider>
     </Fragment>
   );
 };

@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 const Blog = () => {
+  const { t } = useTranslation();
   return (
     <section className="blog main-section flex-column-mobile" id="blog">
       {/* TITLE STARTS */}
@@ -8,7 +10,7 @@ const Blog = () => {
         <h3>
           <span>
             <span className="animated-layer fade-in-left-animation fadeInUp wow">
-              Hướng dẫn
+              {t("blogTitle")}
             </span>
           </span>
         </h3>
@@ -25,20 +27,16 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-1.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="title">
-                  Hướng dẫn tạo tài khoản Exness.
-                </span>
-                <p>
-                  Hướng dẫn đăng kí tài khoản giao dịch Exness
-                </p>
+                <span className="title">{t("blogTitleContent1")}</span>
+                <p>{t("blogDescriptionContent1")}</p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-calendar" />
-                    <span>9 Apr 2022</span>
+                    <span>{t("blogDay1")}</span>
                   </div>
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-comments" />
-                    <span>17 comments</span>
+                    <span>{t("blogComment1")}</span>
                   </div>
                 </div>
               </div>
@@ -47,7 +45,6 @@ const Blog = () => {
         </div>
         {/* POST ITEM ENDS */}
 
-        
         {/* POST ITEM STARTS */}
         <div className="animated-layer fade-in-right-animation fadeInUp wow">
           <Link href="/blog-post2" legacyBehavior>
@@ -56,20 +53,18 @@ const Blog = () => {
                 <img src="assets/blog/blog-post-2.jpg" alt="" />
               </span>
               <div className="content">
-                <span className="title">
-                  Hướng dẫn nạp tiền vào tài khoản Exness
-                </span>
+                <span className="title">{t("blogTitleContent2")}</span>
                 <p>
-                  Hướng dẫn nạp tiền vào tài khoản giao dịch Exness Thông qua VietQR
+                {t("blogDescriptionContent2")}
                 </p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-calendar" />
-                    <span>18 Jan 2023</span>
+                    <span>{t("blogDay2")}</span>
                   </div>
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-comments" />
-                    <span>34 comments</span>
+                    <span>{t("blogComment2")}</span>
                   </div>
                 </div>
               </div>
@@ -86,19 +81,17 @@ const Blog = () => {
               </span>
               <div className="content">
                 <span className="title">
-                  Hướng dẫn chuyển tiền nội bộ Exness
+                {t("blogTitleContent3")}
                 </span>
-                <p>
-                  hướng dẫn chuyển tiền nội bộ giữa các tài khoản Exness
-                </p>
+                <p>{t("blogDescriptionContent3")}</p>
                 <div className="meta d-flex align-items-center">
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-calendar" />
-                    <span>1 Jan 2022</span>
+                    <span>{t("blogDay3")}</span>
                   </div>
                   <div className="d-flex align-items-center">
                     <i className="fa-regular fa-comments" />
-                    <span>10 comments</span>
+                    <span>{t("blogComment3")}</span>
                   </div>
                 </div>
               </div>
@@ -106,8 +99,6 @@ const Blog = () => {
           </Link>
         </div>
         {/* POST ITEM ENDS */}
-
-
       </div>
       {/* LATEST POSTS ENDS */}
     </section>

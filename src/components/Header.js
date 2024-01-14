@@ -6,7 +6,6 @@ import Axios from "axios";
 import { normalAlert } from "./Swal";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-import { useEffect } from "react";
 import i18n from "../i18n/i18n.config";
 
 const Header = () => {
@@ -128,21 +127,22 @@ const Header = () => {
               <li>
                 <span id="blog-link">{t("blog")}</span>
               </li>
-              {languages.map((language) => (
-                <li
-                  onClick={() => {
-                    i18n.changeLanguage(language.code);
-                  }}
-                >
-                  <span id="language-link">{language.name}</span>
-                </li>
-              ))}
             </ul>
           </nav>
         </div>
         {/* MENU ENDS */}
         {/* FREELANCE STARTS */}
         <div className="mail">
+          {languages.map((language) => (
+            <li
+              onClick={() => {
+                i18n.changeLanguage(language.code);
+              }}
+              style={{ cursor: "pointer", padding: "0px 15px" }}
+            >
+              <span id="language-link">{language.name}</span>
+            </li>
+          ))}
           <li>
             <a id="sign-in" href="#" target="_blank">
               {t("signIn")}
@@ -191,14 +191,14 @@ const Header = () => {
               </a>
             </li>
             {languages.map((language) => (
-                <li
-                  onClick={() => {
-                    i18n.changeLanguage(language.code);
-                  }}
-                >
-                  <span id="language-link">{language.name}</span>
-                </li>
-              ))}
+              <li
+                onClick={() => {
+                  i18n.changeLanguage(language.code);
+                }}
+              >
+                <span id="language-link">{language.name}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>

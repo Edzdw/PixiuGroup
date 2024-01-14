@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const Copyright = () => {
+  const { t } = useTranslation();
   return (
     <section className="copyright">
       <img
@@ -9,7 +12,7 @@ const Copyright = () => {
       <div>
         <span>© {new Date().getFullYear()} Infinity EA</span>
         <span>
-          Designed By{" "}
+           {t('footerText')}{" "}
           <a
             target="_blank"
             href="https://themeforest.net/user/Codeefly/portfolio"

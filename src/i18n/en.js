@@ -36,21 +36,129 @@ export default {
   achievementTitle: "Achievements",
   achievementday1: "Oct 2022",
   achievementname1: "One-Way Trade",
-
   achievementday2: "Dec 2022",
   achievementname2: "Two-Way Trade",
-
   achievementday3: "Mar 2023",
   achievementname3: "Auto Del Order",
-
   achievementday4: "Apr 2023",
   achievementname4: "Reduce Negative Pos",
-
   achievementday5: "2023++",
   achievementname5: "More...",
 
-  
-  
+  factDescription1: "Months",
+  factDescription2: "Of Experience",
+  factDescription3: "Profit",
+  factDescription4: "Per Month",
+  factDescription5: "Protection",
+  factDescription6: "Level 1",
+  factDescription7: "Protection",
+  factDescription8: "Level 2",
+  factDescription9: "Customers",
+
+  portfolioTitle: "Product",
+  portfolioProject: "Project: ",
+  portfolioDevelopers: "Developers: ",
+  portfolioTime: "Progress Time: ",
+  portfolioFramework: "Framework: ",
+  portfolioBtn: "Preview",
+
+  portfolioTeamName1: "Pixiu 1",
+  portfolioProjectName1: "One-way Trade",
+  portfolioDevelopersName1: "Pixiu Team",
+  portfolioTimeContent1: "3 Month",
+  portfolioFrameworkName1: "MQL4",
+
+  portfolioTeamName2: "Forex Analysis",
+  portfolioProjectName2: "Forex Analysis",
+  portfolioDevelopersName2: "SmartRisk",
+  portfolioTimeContent2: "1 Month",
+  portfolioFrameworkName2: "After Effect, AE, MQL4",
+
+  portfolioTeamName3: "Pixiu 4",
+  portfolioProjectName3: "Reduce Negative Pos",
+  portfolioDevelopersName3: "Pixiu Team",
+  portfolioTimeContent3: "1 Month",
+  portfolioFrameworkName3: "MQL4",
+
+  portfolioTeamName4: "Pixiu 3",
+  portfolioProjectName4: "Auto Del Order",
+  portfolioDevelopersName4: "Pixiu Team",
+  portfolioTimeContent4: "5 Month",
+  portfolioFrameworkName4: "MQL4",
+
+  portfolioTeamName5: "Pixiu 2",
+  portfolioProjectName5: "Two-way Trade",
+  portfolioDevelopersName5: "Pixiu Team",
+  portfolioTimeContent5: "2 Month",
+  portfolioFrameworkName5: "MQL4",
+
+  testimonialsContent1: '"I have been consistently investing each month since February 2023 with the goal of building wealth. My current account has grown by an impressive 2000% compared to the initial deposit. "',
+  testimonialsName1: "Viet Phan",
+  testimonialsRole1: "User - Exness",
+
+  testimonialsContent2: '"I have been investing with Infinity since the very beginning, and we have had more than 10 continuous updates and positive achievements. I hope for even more success in the future "',
+  testimonialsName2: "Antony",
+  testimonialsRole2: "Client - Pixiu Group Users",
+
+  contactTitle: "Contact",
+
+  contactNumber: "Phone Number",
+  contectNumberContent:"+84 911.838.878",
+  contactAddress: "Address",
+  contactAddressContent: "HCMC",
+  contactEmail: "Email",
+  contactEmailContent: "EricVu.pixiugroups@gmail.com",
+  contactTelegram: "Telegram",
+  contactTelegramContent: "@pixiugroups878",
+
+  blogTitle: "Blog",
+
+  blogTitleContent1: "Guide to Creating an Exness Account",
+  blogDescriptionContent1: "How to Registering your Exness Account",
+  blogDay1: "9 Apr 2022",
+  blogComment1: "17.. comments",
+
+  registerGuideTitle: "Register",
+  registerDay: "9 Apr 2022",
+  registertext: "Register",
+  registertext1: "Guide",
+  registerSubTitle: "Guide to Creating an Exness Account",
+  registerDescription1: "Step 1: Visit the official Exness website",
+  registerDescription2: "Step 2: On the homepage interface, click on the Login section, then select Create an Account.",
+  registerDescription3: "Fill in the required fields, then in the Referral Code section, enter the referral code as follows:",
+  registerDescription4: "Note: Please copy and paste the code to avoid mistakes. Then click continue, congratulations, you have successfully created your Exness account.",
+
+  blogTitleContent2: "Guide to Depositing Funds into Your Exness Account",
+  blogDescriptionContent2: "Instruction for Depositing Funds into your Exness Account by using VietQR.",
+  blogDay2: "18 Jan 2023",
+  blogComment2: "34 comments",
+
+  DepositGuideTitle: "Deposit",
+  DepositDay: "18 Jan 2023",
+  Deposittext: "Exness",
+  Deposittext1: "Guide",
+  DepositSubTitle: "Guide to Depositing Funds into Your Exness Account.",
+  DepositDescription1: "Step 1: Log in to your Exness account, then select Menu and choose the Deposit Funds section.",
+  DepositDescription2: "Step 2: Choose the deposit method that suits you, in this case, select VIETQR as shown in the video, then choose the account you want to deposit funds into.",
+  DepositDescription3: "Step 3: Select the bank you use for the transfer, then save the QR code as shown in the video and proceed with the payment.",
+  DepositDescription4: "Finally, after completing all the steps, please wait for the Exness system to verify the transaction. Note not to refresh the page during this process until the interface automatically switches back to your account. Wishing you success.",
+
+  blogTitleContent3: "Guide to Internal Fund Tranfers at Exness",
+  blogDescriptionContent3: "How to internal Fund Tranfers Between Exness Account",
+  blogDay3: "1 Jan 2022",
+  blogComment3: "10 comments",
+
+  tranferGuideTitle: "Tranfers",
+  tranferDay: "13 June 2023",
+  tranfertext: "Tranfers",
+  tranfertext1: "100 comments",
+  tranferSubTitle: "Guide to Internal Fund Transfers Between Exness Accounts",
+  tranferDescription1: "Step 1: Log in to your Exness account, select the account you want to perform an internal fund transfer from, then click on 'Transfer Funds'.",
+  tranferDescription2: "Step 2: In the interface, select the method, choose 'Transfer to another user,' then enter the recipient's ID and the email used to create their Exness account.",
+  tranferDescription3: "Step 3: Enter the amount you want to transfer, then click 'Confirm' and wait for the system to send an OTP code to your phone - then enter the OTP code and click 'Complete'.",
+  tranferDescription4: "After completing all the steps above, Exness will automatically transfer the funds from your account to the recipient's ID. Best of luck!",
+
+  footerText: "Designed By",
 
 
 };

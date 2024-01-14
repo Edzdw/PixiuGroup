@@ -1,7 +1,9 @@
 import { salimovSlider } from "@/src/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "react-i18next";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
   return (
     <section
       className="portfolio main-section flex-column-mobile"
@@ -13,7 +15,7 @@ const Portfolio = () => {
         <h3>
           <span>
             <span className="animated-layer fade-in-left-animation fadeInUp wow">
-              Sản phẩm 
+              {t('portfolioTitle')}
             </span>
           </span>
         </h3>
@@ -39,38 +41,38 @@ const Portfolio = () => {
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
           <div className="details">
-            <h4>Pixiu 1</h4>
+            <h4>{t('portfolioTeamName1')}</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Phương án :
+                    <i className="fa-regular fa-file-lines" /> {t('portfolioProject')}
                   </span>
-                  <span>Sóng Hồi</span>
+                  <span>{t('portfolioProjectName1')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Đội ngũ phát triển :
+                    <i className="fa-regular fa-user" /> {t('portfolioDevelopers')}
                   </span>
-                  <span>Pixiu Team</span>
+                  <span>{t('portfolioDevelopersName1')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Thời gian :
+                    <i className="fa-regular fa-hourglass" /> {t('portfolioTime')}
                   </span>
-                  <span>3 Tháng</span>
+                  <span>{t('portfolioTimeContent1')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Nền tảng :
+                    <i className="fa-solid fa-code-branch" /> {t('portfolioFramework')}
                   </span>
-                  <span>MQL4</span>
+                  <span>{t('portfolioFrameworkName1')}</span>
                 </li>
               </ul>
             </div>
             <a href="#" target="_blank" className="custom-btn">
               <span>
-                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+                {t('portfolioBtn')} <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
             </a>
           </div>
@@ -92,41 +94,41 @@ const Portfolio = () => {
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
           <div className="details">
-            <h4>Forex Analysis</h4>
+            <h4>{t('portfolioTeamName2')}</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Dự án :
+                    <i className="fa-regular fa-file-lines" /> {t('portfolioProject')}
                   </span>
-                  <span>Phân tích kỹ thuật</span>
+                  <span>{t('portfolioProjectName2')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Khách Hàng :
+                    <i className="fa-regular fa-user" /> {t('portfolioDevelopers')}
                   </span>
-                  <span>Smart Risk</span>
+                  <span>{t('portfolioDevelopersName2')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Thời gian :
+                    <i className="fa-regular fa-hourglass" /> {t('portfolioTime')}
                   </span>
-                  <span>1 months</span>
+                  <span>{t('portfolioTimeContent2')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Nền tảng :
+                    <i className="fa-solid fa-code-branch" /> {t('portfolioFramework')}
                   </span>
-                  <span>After Effects, AE, MQL4</span>
+                  <span>{t('portfolioFrameworkName2')}</span>
                 </li>
               </ul>
             </div>
             <a href="#" target="_blank" className="custom-btn">
               <span>
-                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+                {t('portfolioBtn')} <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
             </a>
-          </div> 
+          </div>
           {/* ITEM DETAILS ENDS */}
         </SwiperSlide> 
         {/* PORTFOLIO ITEM ENDS */}
@@ -147,38 +149,38 @@ const Portfolio = () => {
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
           <div className="details">
-            <h4>Pixiu 4</h4>
+            <h4>{t('portfolioTeamName3')}</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Phương án :
+                    <i className="fa-regular fa-file-lines" /> {t('portfolioProject')}
                   </span>
-                  <span>Giảm vị thế xấu</span>
+                  <span>{t('portfolioProjectName3')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Đội ngữ phát triển :
+                    <i className="fa-regular fa-user" /> {t('portfolioDevelopers')}
                   </span>
-                  <span>Pixiu Team</span>
+                  <span>{t('portfolioDevelopersName3')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Thời gian :
+                    <i className="fa-regular fa-hourglass" /> {t('portfolioTime')}
                   </span>
-                  <span>1 Tháng</span>
+                  <span>{t('portfolioTimeContent3')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Nền tảng :
+                    <i className="fa-solid fa-code-branch" /> {t('portfolioFramework')}
                   </span>
-                  <span>MQL4</span>
+                  <span>{t('portfolioFrameworkName3')}</span>
                 </li>
               </ul>
             </div>
             <a href="#" target="_blank" className="custom-btn">
               <span>
-                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+                {t('portfolioBtn')} <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
             </a>
           </div>
@@ -204,38 +206,38 @@ const Portfolio = () => {
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
           <div className="details">
-            <h4>Pixiu 3</h4>
+            <h4>{t('portfolioTeamName4')}</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Phương án :
+                    <i className="fa-regular fa-file-lines" /> {t('portfolioProject')}
                   </span>
-                  <span>Tự Động Xóa Lệnh</span>
+                  <span>{t('portfolioProjectName4')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Đội ngũ phát triển :
+                    <i className="fa-regular fa-user" /> {t('portfolioDevelopers')}
                   </span>
-                  <span>Pixiu Team</span>
+                  <span>{t('portfolioDevelopersName4')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Thời gian :
+                    <i className="fa-regular fa-hourglass" /> {t('portfolioTime')}
                   </span>
-                  <span>5 Tháng</span>
+                  <span>{t('portfolioTimeContent4')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Nền Tảng :
+                    <i className="fa-solid fa-code-branch" /> {t('portfolioFramework')}
                   </span>
-                  <span>MQL4</span>
+                  <span>{t('portfolioFrameworkName4')}</span>
                 </li>
               </ul>
             </div>
             <a href="#" target="_blank" className="custom-btn">
               <span>
-                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+                {t('portfolioBtn')} <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
             </a>
           </div>
@@ -261,38 +263,38 @@ const Portfolio = () => {
           {/* ITEM MAIN CONTENT ENDS */}
           {/* ITEM DETAILS STARTS */}
           <div className="details">
-            <h4>Pixiu 2</h4>
+            <h4>{t('portfolioTeamName5')}</h4>
             <div>
               <ul>
                 <li>
                   <span>
-                    <i className="fa-regular fa-file-lines" /> Phương án :
+                    <i className="fa-regular fa-file-lines" /> {t('portfolioProject')}
                   </span>
-                  <span>Giao dịch 2 chiều</span>
+                  <span>{t('portfolioProjectName5')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-user" /> Đội ngũ phát triển :
+                    <i className="fa-regular fa-user" /> {t('portfolioDevelopers')}
                   </span>
-                  <span>Pixiu Team</span>
+                  <span>{t('portfolioDevelopersName5')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-regular fa-hourglass" /> Thời Gian :
+                    <i className="fa-regular fa-hourglass" /> {t('portfolioTime')}
                   </span>
-                  <span>2 month</span>
+                  <span>{t('portfolioTimeContent5')}</span>
                 </li>
                 <li>
                   <span>
-                    <i className="fa-solid fa-code-branch" /> Nền Tảng :
+                    <i className="fa-solid fa-code-branch" /> {t('portfolioFramework')}
                   </span>
-                  <span>MQL4</span>
+                  <span>{t('portfolioFrameworkName5')}</span>
                 </li>
               </ul>
             </div>
             <a href="#" target="_blank" className="custom-btn">
               <span>
-                preview <i className="fa-solid fa-arrow-up-right-from-square" />
+                {t('portfolioBtn')} <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
             </a>
           </div>
