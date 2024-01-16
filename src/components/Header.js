@@ -136,7 +136,8 @@ const Header = () => {
           {languages.map((language) => (
             <li
               onClick={() => {
-                i18n.changeLanguage(language.code);
+                window.location.reload()
+                i18n.changeLanguage(language.code)
               }}
               style={{ cursor: "pointer", padding: "0px 15px" }}
             >
