@@ -1,19 +1,166 @@
 export default {
-    home: 'Trang chủ',
-    about: 'Đội ngũ',
-    portfolio: 'Sản phẩm',
-    contact: 'Liên hệ',
-    blog: 'Hướng dẫn',
-    signIn:'Đăng Nhập',
-
-    greeting: 'Chào mừng',
-    greeting2: 'đến',
-    slogan:'"Không chỉ là bot trade cơ bản"',
-    projectName:'Pixiu Groups',
-
+    home: "Trang chủ",
+    about: "Thông tin",
+    portfolio: "Sản phẩm",
+    contact: "Liên hệ",
+    blog: "Hướng dẫn",
+    signIn: "Đăng nhập",
+  
+    greeting: "Chào mừng",
+    greeting2: "đến",
+    slogan:
+      '"Ngoài giao dịch Bot đơn giản - Cánh cổng dẫn đến cơ hội vô tận của bạn"',
+    projectName: "Pixiu Groups",
+  
     about1:
     "Có nhiều năm kinh nghiệm trong thị trường Forex, Crypto. Cũng đã từng cháy tài khoản nhiều lần, phát triển BOT AI thời gian đầu gặp rất nhiều khó khăn và không thành công. Đến thời điểm này đã có những thành tựu nhất định, giúp được những người đồng hành có lợi nhuận ổn định và an toàn vốn.",
-
-    
-
+  
+    phoneNumber: "Số điện thoại",
+    about2:"Ngoài kia bao nhiêu nhiễu nhương",
+    about3:"Đừng vội tin những gì tôi nói",
+    about4:"Mà hãy nhìn những gì tôi làm",
+    about5:"Rồi hãy phán xét",
+    about6:"Ko phải là chuyên gia tư vấn.",
+    about7:"Cũng ko phải là ai ",
+    about8:"TÔI CHỈ CÓ GIẢI PHÁP TẠO RA TIỀN CHO BẠN BỀN VỮNG AN TOÀN VÀ TỰ CHỦ.",
+  
+    featureTitle:"Tính năng",
+    feature1:"Giao dịch tự động",
+    feature2:"24/5",
+    feature3:"Quản lý rủi ro",
+    feature4:"Mức độ bảo vệ",
+    feature5:"Phân tích thời gian thực",
+    feature6:"Phân tích chiến lược",
+    feature7:"Vào/thoát lệnh",
+    feature8:"Da dạng cặp tiền.",
+  
+    achievementTitle: "Thành Tựu",
+    achievementday1: "10 2022",
+    achievementname1: "Sóng Hồi",
+    achievementday2: "12 2022",
+    achievementname2: "Giao dịch 2 chiều",
+    achievementday3: "03 2023",
+    achievementname3: "Tự xoá lệnh",
+    achievementday4: "04 2023",
+    achievementname4: "Giảm vị thế xấu",
+    achievementday5: "2023++",
+    achievementname5: "Đang phát triển",
+  
+    factDescription1: "Tháng",
+    factDescription2: "Kinh nghiệm",
+    factDescription3: "Lợi Nhuận",
+    factDescription4: "Hàng Tháng",
+    factDescription5: "Mốc Bảo Vệ",
+    factDescription6: "Level 1",
+    factDescription7: "Mốc Bảo Vệ",
+    factDescription8: "Level 2",
+    factDescription9: "Khách Hàng",
+  
+    portfolioTitle: "Sản Phẩm",
+    portfolioProject: "Phương án: ",
+    portfolioDevelopers: "Đội ngũ phát triển: ",
+    portfolioTime: "Thời gian: ",
+    portfolioFramework: "nền tảng: ",
+    portfolioBtn: "Xem trước",
+  
+    portfolioTeamName1: "Pixiu 1",
+    portfolioProjectName1: "Sóng Hồi",
+    portfolioDevelopersName1: "Pixiu Team",
+    portfolioTimeContent1: "3 Tháng",
+    portfolioFrameworkName1: "MQL4",
+  
+    portfolioTeamName2: "Phân tích ngoại hối",
+    portfolioProjectName2: "Phân tích kỹ thuật",
+    portfolioDevelopersName2: "Rủi ro thông minh",
+    portfolioTimeContent2: "1 Tháng",
+    portfolioFrameworkName2: "After Effect, AE, MQL4",
+  
+    portfolioTeamName3: "Pixiu 4",
+    portfolioProjectName3: "Giảm vị thế xấu",
+    portfolioDevelopersName3: "Pixiu Team",
+    portfolioTimeContent3: "1 Tháng",
+    portfolioFrameworkName3: "MQL4",
+  
+    portfolioTeamName4: "Pixiu 3",
+    portfolioProjectName4: "Tự động xoá lệnh",
+    portfolioDevelopersName4: "Pixiu Team",
+    portfolioTimeContent4: "5 Tháng",
+    portfolioFrameworkName4: "MQL4",
+  
+    portfolioTeamName5: "Pixiu 2",
+    portfolioProjectName5: "Giao dịch 2 chiều",
+    portfolioDevelopersName5: "Pixiu Team",
+    portfolioTimeContent5: "2 Tháng",
+    portfolioFrameworkName5: "MQL4",
+  
+    testimonialsContent1: '"Tôi đã đầu tư đều đặn hàng tháng từ tháng 2 năm 2023 với mục tiêu xây dựng tài sản. Tài khoản hiện tại của tôi đã tăng lên đáng kinh ngạc 2000% so với số tiền gửi ban đầu. "',
+    testimonialsName1: "Viet Phan",
+    testimonialsRole1: "User - Exness",
+  
+    testimonialsContent2: '"Tôi đã đầu tư cùng Infinity từ đầu, và chúng tôi đã có hơn 10 cập nhật liên tục và đạt được nhiều thành tựu tích cực. Tôi hy vọng sẽ có thêm nhiều thành công hơn trong tương lai. "',
+    testimonialsName2: "Antony",
+    testimonialsRole2: "Client - Pixiu Group Users",
+  
+    contactTitle: "Liên Hệ",
+  
+    contactNumber: "Số Điện Thoại",
+    contectNumberContent:"+84 911.838.878",
+    contactAddress: "Address",
+    contactAddressContent: "HCMC",
+    contactEmail: "Email",
+    contactEmailContent: "EricVu.pixiugroups@gmail.com",
+    contactTelegram: "Telegram",
+    contactTelegramContent: "@pixiugroups878",
+  
+    blogTitle: "Hướng Dẫn",
+  
+    blogTitleContent1: "Hướng dẫn tạo tài khoản Exness",
+    blogDescriptionContent1: "Hướng dẫn đăng kí tài khoản Exness",
+    blogDay1: "09/04/2022",
+    blogComment1: "17 bình luận",
+  
+    registerGuideTitle: "Đăng ký",
+    registerDay: "09/04/2022",
+    registertext: "Đăng ký",
+    registertext1: "Hướng dẫn",
+    registerSubTitle: "Hướng dẫn tạo tài khoản Exness",
+    registerDescription1: "Bước 1: Truy cập trang web chính thức của Exness",
+    registerDescription2: "Bước 2: Trên giao diện trang chủ click vào phần Đăng nhập rồi chọn Tạo tài khoản.",
+    registerDescription3: "Điền vào các trường bắt buộc, sau đó tại phần Mã giới thiệu bạn nhập mã giới thiệu như sau:",
+    registerDescription4: "Lưu ý: Vui lòng sao chép và dán mã để tránh nhầm lẫn. Sau đó bấm tiếp tục, xin chúc mừng, bạn đã tạo thành công tài khoản Exness của mình.",
+  
+    blogTitleContent2: "Hướng dẫn nạp tiền vào tài khoản Exness của bạn",
+    blogDescriptionContent2: "Hướng dẫn nạp tiền vào tài khoản Exness của bạn bằng cách sử dụng VietQR.",
+    blogDay2: "08/01/2023",
+    blogComment2: "34 bình luận",
+  
+    DepositGuideTitle: "Tiền gửi",
+    DepositDay: "18/01/2023",
+    Deposittext: "Exness",
+    Deposittext1: "Hướng dẫn",
+    DepositSubTitle: "Hướng dẫn nạp tiền vào tài khoản Exness của bạn.",
+    DepositDescription1: "Bước 1: Đăng nhập vào tài khoản Exness của bạn, sau đó chọn Menu và chọn phần Deposit Funds.",
+    DepositDescription2: "Bước 2: Chọn phương thức gửi tiền phù hợp với bạn, trong trường hợp này hãy chọn TELQR như trong video, sau đó chọn tài khoản bạn muốn gửi tiền vào.",
+    DepositDescription3: "Bước 3: Chọn ngân hàng bạn sử dụng để chuyển khoản, sau đó lưu mã QR như trong video và tiến hành thanh toán.",
+    DepositDescription4: "Cuối cùng, sau khi hoàn tất các bước, bạn vui lòng đợi hệ thống Exness xác minh giao dịch. Lưu ý không làm mới trang trong quá trình này cho đến khi giao diện tự động chuyển về tài khoản của bạn. Chúc bạn thành công.",
+  
+    blogTitleContent3: "Hướng dẫn chuyển tiền nội bộ tại Exness",
+    blogDescriptionContent3: "Cách chuyển tiền nội bộ giữa các tài khoản Exness",
+    blogDay3: "01/01 2022",
+    blogComment3: "10 bình luận",
+  
+    tranferGuideTitle: "Chuyển nội bộ",
+    tranferDay: "13/06/2023",
+    tranfertext: "Chuyển nội bộ",
+    tranfertext1: "100 bình luận",
+    tranferSubTitle: "Hướng dẫn chuyển tiền nội bộ giữa các tài khoản Exness",
+    tranferDescription1: "Bước 1: Đăng nhập vào tài khoản Exness của bạn, chọn tài khoản bạn muốn thực hiện chuyển tiền nội bộ, sau đó nhấp vào 'Chuyển tiền'.",
+    tranferDescription2: "Bước 2: Trong giao diện chọn phương thức, chọn “Chuyển sang người dùng khác”, sau đó nhập ID người nhận và email dùng để tạo tài khoản Exness của họ.",
+    tranferDescription3: "Bước 3: Nhập số tiền muốn chuyển, sau đó nhấn “Xác nhận” và đợi hệ thống gửi mã OTP về điện thoại – sau đó nhập mã OTP và nhấn “Hoàn tất”.",
+    tranferDescription4: "Sau khi hoàn thành tất cả các bước trên, Exness sẽ tự động chuyển tiền từ tài khoản của bạn sang ID của người nhận. May mắn nhất!",
+  
+    footerText: "Được thiết kế bởi",
+  
+  
+  
 }
