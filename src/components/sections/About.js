@@ -88,15 +88,6 @@ const About = () => {
               <ul>
                 <li>
                   <span>
-                    <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                      <span>{t("phoneNumber")} :</span>
-                      <span>0903770039</span>
-                    </span>
-
-                    <span className="animated-layer fade-in-up-animation fadeInUp wow">
-                      <span>Gmail :</span>
-                      <span>EricVu.pixiugroups@gmail.com</span>
-                    </span>
 
                     <span className="animated-layer fade-in-up-animation fadeInUp wow">
                       <span>
