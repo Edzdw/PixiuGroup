@@ -10,7 +10,7 @@ const Copyright = () => {
         src="assets/separator-copyright.png"
       />
       <div>
-        <span>© {new Date().getFullYear()} Infinity EA</span>
+        <span>© {new Date().getFullYear()} Pixiu Groups</span>
         <span>
            {t('footerText')}{" "}
           <a
