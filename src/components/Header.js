@@ -16,6 +16,7 @@ const Header = () => {
 
   const [email, setEmail] = React.useState("");
   const { t } = useTranslation();
+  const url = "https://dashboard.pixiugroups.com"
   const [languages, setLanguage] = useState([
     {
       id: 0,
@@ -144,7 +145,7 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <a id="sign-in" href="#" target="_blank">
+            <a id="sign-in" href={url} target="_blank">
               {t("signIn")}
             </a>
           </li>
